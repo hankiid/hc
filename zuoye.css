@@ -1,0 +1,129 @@
+/* 初始化 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 背景 */
+body {
+    background-color: #e9e6e6;
+}
+
+/* header */
+.header {
+    position: relative;
+    height: 50px;
+    background-color: rgb(48, 106, 208);
+}
+
+.sign_in {
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* 标题 */
+.title {
+    position: relative;
+    margin: 5px auto;
+    height: 50px;
+    width: 700px;
+    border: 1px solid #3f3f3f;
+    border-radius: 52px;
+    background-color: white;
+}
+
+.title h1 {
+    position: absolute;
+    top: 13px;
+    left: 75px;
+    font-size: 20px;
+    font-family: "楷体";
+}
+
+.share {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: 14px;
+    right: 47px;
+    background-color: rgb(228, 239, 244);
+    border-radius: 33px;
+    border: 0;
+}
+
+/* 下拉表单 */
+.select {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 700px;
+    height: 130px;
+    border: 1px solid #3f3f3f;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.subject {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(243, 244, 246);
+    outline: none;
+    top: 46px;
+    left: 75px;
+    border-radius: 14px;
+    color: #7f7f7f;
+}
+
+.select h3 {
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+option:nth-child(n+2) {
+    color: black;
+}
+
+/* 上传作业 */
+.upload {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 700px;
+    height: 200px;
+    border: 1px solid #3f3f3f;
+    border-radius: 33px;
+    background-color: white;
+}
+
+#upload {
+    position: absolute;
+    display: block;
+    width: 141px;
+    top: 24px;
+    left: 75px;
+}
+
+/* 提交作业 */
+.submit {
+    margin-top: 300px;
+}
+
+#submit {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(238, 42, 42);
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+}
