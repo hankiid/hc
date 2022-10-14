@@ -20,8 +20,8 @@
     <div class="select">
         <h3>请选择要提交的科目</h3>
         <form action="">
-            <select name="" id="" class="subject">
-                <option>请选择</option>
+            <select name="" id="" class="subject" onchange="changecolor()">
+                <option class="selection">请选择</option>
                 <option>组原</option>
                 <option>大雾 </option>
                 <option>危机混 </option>
@@ -39,6 +39,17 @@
     <div class="submit">
         <input type="submit" name="" id="submit" value="提交">
     </div>
+    <script>
+        function changecolor() {
+            var subject = document.querySelector(".subject");
+            var sub = subject.selectedIndex;
+            var option = document.querySelector(".selection");
+            if (subject.options[sub].value != "请选择") {
+                subject.style.color = "black";
+                option.style.color = "#777";
+            }
+        }
+    </script>
 </body>
 
 </html>
