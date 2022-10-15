@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline:none;
+    outline: none;
 }
 
 /* 背景 */
@@ -56,11 +56,58 @@ body {
     border: 0;
 }
 
+/* 信息提交 */
+.information {
+    position: relative;
+    width: 700px;
+    height: 120px;
+    background-color: white;
+    margin: 10px auto;
+    border: 1px solid #3f3f3f;
+    border-radius: 26px;
+}
+
+.row1,
+.row2 {
+    position: relative;
+    left: 75px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#name,
+#xuehao {
+    height: 25px;
+    border: 1px solid rgb(81, 193, 237);
+    border-radius: 13px;
+    font-family: "楷体";
+    font-size: 15px;
+}
+
+.row11 {
+    position: absolute;
+    width: 323px;
+    color: red;
+    font-size: 10px;
+    top: 18px;
+    right: 69px;
+    display: none;
+}
+
+.row22 {
+    position: absolute;
+    width: 323px;
+    color: red;
+    font-size: 10px;
+    top: 57px;
+    right: 69px;
+    display: none;
+}
+
 /* 下拉表单 */
 .select {
     position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto;
     width: 700px;
     height: 130px;
     border: 1px solid #3f3f3f;
@@ -93,28 +140,53 @@ option:nth-child(n+2) {
 }
 
 /* 上传作业 */
-.upload {
+#upload {
     position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
     width: 700px;
-    height: 200px;
+    height: 300px;
+    margin: 10px auto;
     border: 1px solid #3f3f3f;
-    border-radius: 33px;
+    border-radius: 27px;
     background-color: white;
 }
 
-#upload {
-    position: absolute;
-    display: block;
-    width: 141px;
-    top: 24px;
+/* 修改上传按钮样式 */
+.fileinp {
+    position: relative;
+    top: 33px;
     left: 75px;
+    width: 108px;
+    overflow: hidden;
+}
+
+.upload {
+    width: 100px;
+    background-color: #82b6f4;
+    border-radius: 13px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+}
+
+.file-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+.file {
+    margin-bottom: 30px;
+}
+
+.fileinp:hover .upload {
+    background: #378eef;
 }
 
 /* 提交作业 */
 .submit {
-    margin-top: 300px;
+    margin-top: 10px;
 }
 
 #submit {
@@ -127,4 +199,8 @@ option:nth-child(n+2) {
     font-size: 15px;
     border: 0;
     border-radius: 15px;
+}
+
+#submit:hover {
+    background-color: rgb(240, 98, 98);
 }
