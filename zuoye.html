@@ -17,6 +17,24 @@
         <h1>作业提交</h1>
         <input type="button" value="分享" class="share">
     </div>
+    <div class="information">
+        <form action="">
+            <div class="row1">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" placeholder="请输入您的姓名">
+            </div>
+            <div class="row11">
+                请输入正确的姓名格式（不多于15个字母或不多于5个汉字）
+            </div>
+            <div class="row2">
+                <label for="xuehao">学号：</label>
+                <input type="text" id="xuehao" placeholder="请输入您的学号">
+            </div>
+            <div class="row22">
+                请输入正确的学号格式（U+9位数字）
+            </div>
+        </form>
+    </div>
     <div class="select">
         <h3>请选择要提交的科目</h3>
         <form action="">
@@ -39,6 +57,7 @@
     <div class="submit">
         <input type="submit" name="" id="submit" value="提交">
     </div>
+
     <script>
         function changecolor() {
             var subject = document.querySelector(".subject");
@@ -47,6 +66,24 @@
             if (subject.options[sub].value != "请选择") {
                 subject.style.color = "black";
                 option.style.color = "#777";
+            }
+        }
+        var row1 = document.querySelector("#name");
+        var row2 = document.querySelector("#xuehao");
+        var row11 = document.querySelector(".row11");
+        var row22 = document.querySelector(".row22");
+        row1.onblur = function () {
+            if (!(this.value.match(/^[a-zA-Z]{1,15}$/) || this.value.match(/^\W{1,5}$/))) {
+                row11.style.display = "block";
+            } else {
+                row11.style.display = "none";
+            }
+        }
+        row2.onblur = function () {
+            if (!(this.value.match(/^[U]+\d{9}$/))) {
+                row22.style.display = "block";
+            } else {
+                row22.style.display = "none";
             }
         }
     </script>
