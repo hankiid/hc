@@ -1,4 +1,3 @@
-
 /* 初始化 */
 * {
     padding: 0;
@@ -205,4 +204,3 @@ option:nth-child(n+2) {
 #submit:hover {
     background-color: rgb(240, 98, 98);
 }
-
