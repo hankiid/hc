@@ -30,16 +30,20 @@
         <thead><tr><th >序号</th>   <th>姓名</th>   <th>学号</th>   <th >提交状态</th>  <th>评分</th> 
         <th>查看作业</th> </tr></thead>
      <tbody id="tbd">
-        <tr><td>1</td>   <td>张三</td>  <td>17734562345</td>  <td></td>  
-            <td><input ></td> <td id="shan1"><a href="javascript:void(0);">查看作业</a></td></tr>
+        <tr><td>1</td>   <td>张三</td>  <td>17734562345</td>  <td id="state"></td>  
+            <td><input type="text" style=" height: 100%" ></td> <td id="shan1"><a href="javascript:void(0);">查看作业</a></td></tr>
 
-        <tr><td>2</td>   <td>李四</td>  <td>17834562345</td>  <td></td> 
-            <td><input ></td> <td id="shan2"><a href="javascript:void(0);">查看作业</a></td></tr>
+        <tr><td>2</td>   <td>李四</td>  <td>17834562345</td>  <td id="state"></td> 
+            <td><input type="text" style="height: 100%" ></td> <td id="shan2"><a href="javascript:void(0);">查看作业</a></td></tr>
 
-        <tr><td>3</td>   <td>王五</td>  <td>17835232345</td>  <td></td> 
-            <td><input ></td> <td id="shan3"><a href="javascript:void(0);">查看作业</a></td></tr>
+        <tr><td>3</td>   <td>王五</td>  <td>17835232345</td>  <td id="state"></td> 
+            <td><input  type="text" style=" height: 100%" ></td> <td id="shan3"><a href="javascript:void(0);">查看作业</a></td></tr>
     </tbody>
 </table>
+<!-- 保存改分 -->
+<div class="submit">
+    <input type="submit" name="" id="submit" value="上传评分">
+</div>
     <script>
         $(function()
         {

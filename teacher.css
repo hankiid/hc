@@ -38,3 +38,9 @@ th{
  a{
   text-decoration:none;
  }
+ /* 上传评分按钮 */
+ .submit{
+    position: absolute;
+    right :300px;
+    top:30px;
+    }
