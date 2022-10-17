@@ -10,7 +10,7 @@ body {
     background-color: #e9e6e6;
 }
 
-/* header */
+/* 头部部分start  */
 .header {
     position: relative;
     height: 50px;
@@ -26,7 +26,9 @@ body {
     text-decoration: none;
 }
 
-/* 标题 */
+/* 头部部分end  */
+
+/* 标题部分start */
 .title {
     position: relative;
     margin: 5px auto;
@@ -56,7 +58,10 @@ body {
     border: 0;
 }
 
-/* 信息提交 */
+/* 标题部分end */
+
+
+/* 信息输入部分start */
 .information {
     position: relative;
     width: 700px;
@@ -104,7 +109,10 @@ body {
     display: none;
 }
 
-/* 下拉表单 */
+/* 信息输入部分end */
+
+
+/* 选择科目部分start */
 .select {
     position: relative;
     margin: 10px auto;
@@ -139,7 +147,10 @@ option:nth-child(n+2) {
     color: black;
 }
 
-/* 上传作业 */
+/* 选择科目部分end */
+
+
+/* 上传文件部分start */
 #upload {
     position: relative;
     width: 700px;
@@ -184,7 +195,10 @@ option:nth-child(n+2) {
     background: #378eef;
 }
 
-/* 提交作业 */
+/* 上传文件部分end */
+
+
+/* 提交按钮 */
 .submit {
     margin-top: 10px;
 }
