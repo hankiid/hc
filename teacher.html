@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teacher</title>
     <script src="./lib/jquery.min.js"></script>
+    <script src="teacher.js"></script>
     <link rel="stylesheet" href="teacher.css">
 </head>
 <body>
@@ -15,48 +16,47 @@
     <div class="select">
         <h3>请选择要查看的科目</h3>
         <form action="">
-            <select name="" id="" class="subject">
-                <option>请选择</option>
-                <option>组原</option>
-                <option>大雾 </option>
-                <option>危机混 </option>
-                <option>毛概 </option>
-                <option>英语 </option>
+            <select name="select" id="picked" class="subject"  onchange="show() ">
+                
+                <option value="">请选择</option>
+                <option value="./zuyuan.jpg">组原</option>
+                <option value="./dawu.jpg">大雾 </option>
+                <option value="./weijifen.jpg">危机混 </option>
+                <option value="./maogai.jpg">毛概 </option>
+                <option value="./english.jpg">英语 </option>
             </select>
+         
+            <br><br>
         </form>
     </div>
+ 
+        <div class="img_box">   <img id="img" src="" class="img-object" > </div>
+        <!-- style="max-width: 75px; max-height: 275px; margin-left: 35%; margin-top: 1%;" -->
+
     <table >
         <!-- 名字整活儿用的 -->
         <thead><tr><th >序号</th>   <th>姓名</th>   <th>学号</th>   <th >提交状态</th>  <th>评分</th> 
         <th>查看作业</th> </tr></thead>
      <tbody id="tbd">
         <tr><td>1</td>   <td>张三</td>  <td>17734562345</td>  <td id="state"></td>  
-            <td><input type="text" style=" height: 100%" ></td> <td id="shan1"><a href="javascript:void(0);">查看作业</a></td></tr>
+            <td><input type="text" style=" height: 100%" ></td> <td id="shan1"><a href="javascript:void(0);">下载查看作业</a></td></tr>
 
         <tr><td>2</td>   <td>李四</td>  <td>17834562345</td>  <td id="state"></td> 
-            <td><input type="text" style="height: 100%" ></td> <td id="shan2"><a href="javascript:void(0);">查看作业</a></td></tr>
+            <td><input type="text" style="height: 100%" ></td> <td id="shan2"><a href="javascript:void(0);">下载查看作业</a></td></tr>
 
         <tr><td>3</td>   <td>王五</td>  <td>17835232345</td>  <td id="state"></td> 
-            <td><input  type="text" style=" height: 100%" ></td> <td id="shan3"><a href="javascript:void(0);">查看作业</a></td></tr>
+            <td><input  type="text" style=" height: 100%" ></td> <td id="shan3"><a href="javascript:void(0);">下载查看作业</a></td></tr>
     </tbody>
 </table>
 <!-- 保存改分 -->
 <div class="submit">
     <input type="submit" name="" id="submit" value="上传评分">
 </div>
-    <script>
-        $(function()
-        {
-            $(".nav>li").mouseover(function(){
-                $(this).children("ul").show();
-            });
-            $(".nav>li").mouseout(function(){
-                $(this).children("ul").hide();
-            });
-        })
-    </script>
+
 </body>
 </html>
+
+
     <!-- <div class="select">
     <ul class="nav">
         <li>
@@ -81,3 +81,14 @@
         </li>
     </ul>
 </div> -->
+    <!-- <script>
+        $(function()
+        {
+            $(".nav>li").mouseover(function(){
+                $(this).children("ul").show();
+            });
+            $(".nav>li").mouseout(function(){
+                $(this).children("ul").hide();
+            });
+        })
+    </script> -->
