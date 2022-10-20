@@ -39,11 +39,13 @@ div {
     margin-left: 170px;
     margin-bottom: 10px;
     text-align: left;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
 }
 /* 对作业的要求 */
 .content {
     margin: 5px 170px 0 170px;
     text-align: left;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
 }
 
 input {
@@ -51,11 +53,18 @@ input {
     height: 50px;
     border: 0;
     border-radius: 20px;  
+    line-height: 50px;
 }
-
-/* input:focus {
-    box-shadow: 5px 5px 3px 3px rgba(0,0,0,.1);
-} */
+form > div input {
+    text-indent: 1em;
+}
+input::placeholder {
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    text-indent: 1em;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
 .btm {
     width: 160px;
     height: 50px;
@@ -82,9 +91,25 @@ form > div {
 /* 右边的盒子 */
 .right {
     float: left;
+    position: relative;
     width: 620px;
     height: 620px;
     margin-bottom: 0px;
     border:5px dotted #bbcdfb;
     border-radius: 20px;
+    text-align: center;
+}
+.btm2 {
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    left: 230px;
+    bottom: 110px;
+    border: 2px solid #475def;
+    background-color: #fff;
+    color: #475def;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-align: center;
 }
