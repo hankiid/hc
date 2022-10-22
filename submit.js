@@ -18,7 +18,7 @@ function changedw()
 
 function changedy()
 {
-    document.gquerySelector('h3').innerHTML = '大学英语' ;
+    document.querySelector('h3').innerHTML = '大学英语' ;
     document.getElementById('homework_content').innerHTML = '完成书上练习，精听ted，并准备pre。' ;
 }
 
