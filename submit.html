@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>submit</title>
     <link rel="stylesheet" href="submit.css">
+    <script src="submit.js"></script>
 </head>
 <body>
     <div class="bg">
@@ -16,8 +17,8 @@
         <!-- 左侧的提交 -->
         <div class="left">
             <div class="desciption">
-                <div class="subject"><h3>马克思主义原理</h3></div>
-                <div class="content"><p>社会实践ppt的提交,文件命名的格式,页数不少于30页</p></div>
+                <div class="subject" id="subject_name"><h3>马克思主义原理</h3></div>
+                <div class="content" id="homework_content"><p>社会实践ppt的提交,文件命名的格式,页数不少于30页</p></div>
             </div>
             <!-- 基础信息 -->
             <div class="info">
@@ -39,6 +40,11 @@
         </div>
         <!-- 右侧的图片 -->
         <div class="right">
+            <div class="picture1"><img src="my.png" alt="马克思主义原理" onmouseover="changemy()"></div>
+            <div class="picture2"><img src="vjf.png" alt="微积分" onmouseover="changevjf()"></div>
+            <div class="picture3"><img src="dw.png" alt="大学物理" onmouseover="changedw()"></div>
+            <div class="picture4"><img src="dy.png" alt="大学英语" onmouseover="changedy()"></div>
+            <div class="picture5"><img src="mg.png" alt="毛概" onmouseover="changemg()"></div>
             <div class="tijiao_bottom">
                 <input type="bottom"  class="btm2" value="上传">
             </div>
