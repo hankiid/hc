@@ -73,6 +73,7 @@ input::placeholder {
     font-weight: 700;
     font-size: 20px;
     font-family: "微软雅黑";
+    cursor:pointer;
 }
 
 form > div {
@@ -85,7 +86,8 @@ form > div {
 }
 
 .submit_bottom {
-    margin: 150px 270px; 
+    margin: 180px 270px 120px 270px; 
+    cursor:pointer;
 }
 
 /* 右边的盒子 */
@@ -99,12 +101,24 @@ form > div {
     border-radius: 20px;
     text-align: center;
 }
+.right > div {
+    float:left;
+    margin: 15px 26px;
+}
+div img {
+    cursor:pointer;
+    transition-duration: all 0.3s;
+}
+
+div img:hover {
+    transform:scale(1.1);
+}
 .btm2 {
     width: 160px;
     height: 50px;
     position: absolute;
     left: 230px;
-    bottom: 110px;
+    bottom: 80px;
     border: 2px solid #475def;
     background-color: #fff;
     color: #475def;
@@ -112,4 +126,5 @@ form > div {
     font-size: 20px;
     font-family: "微软雅黑";
     text-align: center;
+    cursor:pointer;
 }
