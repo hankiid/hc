@@ -128,3 +128,13 @@ div img:hover {
     text-align: center;
     cursor:pointer;
 }
+
+.file_up {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 230px;
+    bottom: 80px;
+    filter: opacity(0%);
+    cursor:pointer;
+}
