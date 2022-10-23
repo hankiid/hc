@@ -11,28 +11,27 @@
 </head>
 <body>
     <div class="title">
-        <h2>作业收集</h2>
+        <h2>作业<span class="titlepart">收集</span></h2>
     </div>
     <div class="select">
-        <h3>请选择要查看的科目</h3>
         <form action="">
-            <select name="select" id="picked" class="subject"  onchange="show() ">
+            <select name="select" id="picked" class="subject" >
                 
-                <option value="">请选择</option>
-                <option value="./zuyuan.jpg">组原</option>
-                <option value="./dawu.jpg">大雾 </option>
-                <option value="./weijifen.jpg">危机混 </option>
-                <option value="./maogai.jpg">毛概 </option>
-                <option value="./english.jpg">英语 </option>
+                <option >查看科目</option>
+                <option >组原</option>
+                <option >大雾 </option>
+                <option >危机混 </option>
+                <option >毛概 </option>
+                <option >英语 </option>
             </select>
          
-            <br><br>
+  
         </form>
     </div>
- 
-        <div class="img_box">   <img id="img" src="" class="img-object" > </div>
-        <!-- style="max-width: 75px; max-height: 275px; margin-left: 35%; margin-top: 1%;" -->
-
+    <div >
+        <input type="submit" name="" id="submit" value="提交评分" onmouseover="this.style.backgroundColor='darkturquoise';" onmouseout="this.style.backgroundColor='blue';" class="submit" >
+    </div>
+<div class="border_">
     <table >
         <!-- 名字整活儿用的 -->
         <thead><tr><th >序号</th>   <th>姓名</th>   <th>学号</th>   <th >提交状态</th>  <th>评分</th> 
@@ -46,13 +45,20 @@
 
         <tr><td>3</td>   <td>王五</td>  <td>17835232345</td>  <td id="state"></td> 
             <td><input  type="text" style=" height: 100%" ></td> <td id="shan3"><a href="javascript:void(0);">下载查看作业</a></td></tr>
-    </tbody>
-</table>
-<!-- 保存改分 -->
-<div class="submit">
-    <input type="submit" name="" id="submit" value="上传评分">
-</div>
 
+    </tbody>
+   
+    </table>
+<!-- 保存改分 -->
+
+        <div>
+            <input type="submit" name="" id="submit2" value="保存评分" onmouseover="this.style.backgroundColor='gainsboro';" onmouseout="this.style.backgroundColor='white';" class="submit2" >
+        </div>
+</div>
+            <div class="remind">
+                    <span>有</span> <output></output><span>人未交作业   </span>
+                    <input type="button" name=""  class="tishi" value="交作业提醒">
+            </div>
 </body>
 </html>
 
