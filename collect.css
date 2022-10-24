@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    width: 1420px;
+    height: 800px;
+    background:#eafcfe url() no-repeat top center;
+}
+
+div {
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 1370px;
+    height: 100px;
+    padding-left: 50px;
+    color: #475def;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100px;
+    font-family: "微软雅黑";
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
+.zuoye {
+    color: #000;
+}
+
+.left {
+    float: left;
+    width: 700px;
+    height: 700px;
+    text-align: center;
+}
+/* 作业科目 */
+.subject {
+    margin-left: 170px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
+
+form > div {
+    width: 360px;
+    height: 50px;
+    margin:40px 170px ;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;  
+    box-shadow: 5px 5px 3px 3px rgba(0,0,0,.1);
+}
+
+select {
+    width: 354px;
+    height: 50px;
+    padding: 0 3px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;  
+    color: rgb(151, 148, 148);
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
+
+div > label  {
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    color: rgb(151, 148, 148);
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
+input {
+    width: 260px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
+
+.homework_box {
+    /* position: relative; */
+    float: left;
+    width: 360px;
+    height: 150px;
+}
+
+.homework_content_name_box {
+    /* position: absolute; */
+    float: left;
+    width: 100px;
+    height: 150px;
+}
+
+.content {
+    /* position: absolute; */
+    float: left;
+    width: 254px;
+    height: 130px;
+    background-color:#fff;
+    padding: 10px 3px;
+    font-size: 18px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+/* 右边的盒子 */
+.right {
+    float: left;
+    position: relative;
+    width: 620px;
+    height: 620px;
+    margin-bottom: 0px;
+    border:5px dotted #bbcdfb;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tip1 {
+    position: absolute;
+    width: 620px;
+    height: 20px;
+    bottom: 150px;
+}
+
+.tip2 {
+    width: 620px;
+    height: 20px;
+}
+.btm2 {
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    left: 230px;
+    bottom: 80px;
+    border: 2px solid #475def;
+    background-color: #fff;
+    color: #475def;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-align: center;
+    cursor:pointer;
+}
+
+.file_up {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 230px;
+    bottom: 80px;
+    filter: opacity(0%);
+    cursor:pointer;
+}
