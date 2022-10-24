@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collect</title>
+    <link rel="stylesheet" href="collect.css">
+    <script src="collect.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <!-- 作业提交单独占头部 -->
+        <div class="header"><h4>
+            <span class="zuoye">作 业</span>
+            <span class="设置">设 置</span></h4>
+        </div>
+        <!-- 左侧的提交 -->
+        <div class="left">
+            <div class="desciption">
+                <div class="subject" id="subject_name"><h2>老师，你好呀！</h2></div>
+            </div>
+            <!-- 基础信息 -->
+            <div class="info">
+                <form action="" method="post">
+                    <div>
+                        <select name="tiiao_subject" id="">
+                            <option value="none" selected disabled hidden>提交科目</option>
+                            <option value="" class="my">马克思主义原理</option>
+                            <option value="" class="dw">大学物理</option>
+                            <option value="" class="dy">大学英语</option>
+                            <option value="" class="vjf">微积分</option>
+                            <option value="" class="mg">毛概</option>
+                        </select>
+                    </div>
+                    <div class="homework_box">
+                        <div class="homework_content_name_box">
+                            <label for="zuoyeyaoqiu" class="homework_content">作业内容</label>
+                        </div>
+                        <div class="content" contenteditable="true"></div>
+                    </div>
+                    <div class="deadline">
+                        <label for="截止日期" class="ddl">截止日期</label>
+                        <input type="text" >
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 右侧的图片 -->
+        <div class="right">
+            <div class="tip1">
+                请上传需要提交作业学生名单
+            </div>
+            <div class="tijiao_bottom">
+                <input type="bottom"  class="btm2" value="上传">
+                <input type="file" name="" class="file_up" id="fileup">
+            </div>
+
+        </div>
+        <div class="tip2">
+            <div>
+            有学生不在表单内--<a href="#">添加学生信息</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
