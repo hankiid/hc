@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>submit</title>
     <link rel="stylesheet" href="submit.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script src="submit.js"></script>
+
 </head>
 <body>
     <div class="bg">
@@ -22,19 +24,16 @@
             </div>
             <!-- 基础信息 -->
             <div class="info">
-                <form>
+                <form action="" method="post">
                     <div>
                         <input type="text" placeholder="姓名">
                     </div>
                     <div>
                         <input type="text" placeholder="学号">
                     </div>
-                    <div>
-                        <input type="text" placeholder="邮箱">
-                    </div>
                 </form>
-                <div class="submit_bottom">
-                    <input class="btm" type="submit" value="提交">
+                <div class="submit_button">
+                    <input class="btn" type="submit" value="提交">
                 </div>
             </div>
         </div>
@@ -45,8 +44,8 @@
             <div class="picture3"><img src="dw.png" alt="大学物理" onmouseover="changedw()"></div>
             <div class="picture4"><img src="dy.png" alt="大学英语" onmouseover="changedy()"></div>
             <div class="picture5"><img src="mg.png" alt="毛概" onmouseover="changemg()"></div>
-            <div class="tijiao_bottom">
-                <input type="bottom"  class="btm2" value="上传">
+            <div class="tijiao_button">
+                <input type="button"  class="btn2" value="上传">
                 <input type="file" name="" class="file_up" id="fileup">
             </div>
         </div>
