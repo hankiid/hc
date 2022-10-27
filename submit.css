@@ -48,6 +48,16 @@ div {
     text-shadow:5px 5px 6px rgba(0,0,0,.2);
 }
 
+
+form > div {
+    width: 360px;
+    height: 50px;
+    margin:50px 170px 0 170px;
+    border: 0;
+    border-radius: 20px;  
+    box-shadow: 5px 5px 3px 3px rgba(0,0,0,.1);
+}
+
 input {
     width: 360px;
     height: 50px;
@@ -65,7 +75,7 @@ input::placeholder {
     text-indent: 1em;
     text-shadow:5px 5px 6px rgba(0,0,0,.2);
 }
-.btm {
+.btn {
     width: 160px;
     height: 50px;
     background-color: #475def;
@@ -76,16 +86,8 @@ input::placeholder {
     cursor:pointer;
 }
 
-form > div {
-    width: 360px;
-    height: 50px;
-    margin:30px 170px 0 170px;
-    border: 0;
-    border-radius: 20px;  
-    box-shadow: 5px 5px 3px 3px rgba(0,0,0,.1);
-}
 
-.submit_bottom {
+.submit_button {
     margin: 180px 270px 120px 270px; 
     cursor:pointer;
 }
@@ -113,7 +115,7 @@ div img {
 div img:hover {
     transform:scale(1.1);
 }
-.btm2 {
+.btn2 {
     width: 160px;
     height: 50px;
     position: absolute;
@@ -131,10 +133,11 @@ div img:hover {
 
 .file_up {
     position: absolute;
+    display: none;
     width: 160px;
     height: 50px;
     left: 230px;
     bottom: 80px;
-    filter: opacity(0%);
+    /* filter: opacity(0%); */
     cursor:pointer;
 }
