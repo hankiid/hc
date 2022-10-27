@@ -118,8 +118,34 @@ input {
     overflow-x: hidden;
     overflow-y: auto;
 }
+.btn {
+    width: 160px;
+    height: 50px;
+    background-color: #475def;
+    color:#fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    cursor:pointer;
+}
+._button {
+    margin: 60px 270px 0px 270px; 
+    cursor:pointer;
+}
 
-
+.popup_window{
+    display: none;
+    width: 200px;
+    height: 120px;
+    margin: 10px 249px;
+    background-color: #fff;
+    border: #475def dotted 1px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+}
 
 /* 右边的盒子 */
 .right {
@@ -144,7 +170,12 @@ input {
     width: 620px;
     height: 20px;
 }
-.btm2 {
+
+.tip2 > div > span {
+    color: #475def;
+    cursor: pointer;
+}
+.btn2 {
     width: 160px;
     height: 50px;
     position: absolute;
@@ -162,10 +193,11 @@ input {
 
 .file_up {
     position: absolute;
+    display: none;
     width: 160px;
     height: 50px;
     left: 230px;
     bottom: 80px;
-    filter: opacity(0%);
+    /* filter: opacity(0%); */
     cursor:pointer;
 }
