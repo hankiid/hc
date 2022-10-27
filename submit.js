@@ -27,3 +27,9 @@ function changemg()
     document.querySelector('h3').innerHTML = '毛概' ;
     document.getElementById('homework_content').innerHTML = '简单介绍本课程给你带来的启发与思考，不少于两千字，并以小组为单位制作PPT上台展示。' ;
 }
+
+$(document).ready(function(){
+    $(".btn2").click(function(){
+        $(".file_up").click();
+    });
+});
