@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>collect</title>
     <link rel="stylesheet" href="collect.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script src="collect.js"></script>
 </head>
 <body>
@@ -44,6 +45,13 @@
                         <input type="text" >
                     </div>
                 </form>
+                <div class="_button">
+                    <input class="btn" type="button" value="生成链接">
+                </div>
+                <!-- 弹窗的隐藏盒子 -->
+                <div class="popup_window">
+
+                </div>
             </div>
         </div>
         <!-- 右侧的图片 -->
@@ -51,15 +59,15 @@
             <div class="tip1">
                 请上传需要提交作业学生名单
             </div>
-            <div class="tijiao_bottom">
-                <input type="bottom"  class="btm2" value="上传">
+            <div class="tijiao_button">
+                <input type="button"  class="btn2" value="上传">
                 <input type="file" name="" class="file_up" id="fileup">
             </div>
 
         </div>
         <div class="tip2">
             <div>
-            有学生不在表单内--<a href="#">添加学生信息</a>
+            有学生不在表单内--<span class="add">添加学生信息</span>
             </div>
         </div>
     </div>
