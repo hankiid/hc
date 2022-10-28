@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>collect</title>
     <link rel="stylesheet" href="collect.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script src="collect.js"></script>
 </head>
+
 <body>
     <div class="bg">
         <!-- 作业提交单独占头部 -->
-        <div class="header"><h4>
-            <span class="zuoye">作 业</span>
-            <span class="设置">设 置</span></h4>
+        <div class="header">
+            <h4>
+                <span class="zuoye">作 业</span>
+                <span class="设置">设 置</span>
+            </h4>
         </div>
         <!-- 左侧的提交 -->
         <div class="left">
             <div class="desciption">
-                <div class="subject" id="subject_name"><h2>老师，你好呀！</h2></div>
+                <div class="subject" id="subject_name">
+                    <h2>老师，你好呀！</h2>
+                </div>
             </div>
             <!-- 基础信息 -->
             <div class="info">
                 <form action="" method="post">
                     <div>
-                        <select name="tiiao_subject" id="">
+                        <select name="tiiao_subject" id="biaodan">
                             <option value="none" selected disabled hidden>提交科目</option>
-                            <option value="" class="my">马克思主义原理</option>
-                            <option value="" class="dw">大学物理</option>
-                            <option value="" class="dy">大学英语</option>
-                            <option value="" class="vjf">微积分</option>
-                            <option value="" class="mg">毛概</option>
+                            <option value="马克思主义原理" class="my">马克思主义原理</option>
+                            <option value="大学物理" class="dw">大学物理</option>
+                            <option value="大学英语" class="dy">大学英语</option>
+                            <option value="微积分" class="vjf">微积分</option>
+                            <option value="毛概" class="mg">毛概</option>
                         </select>
                     </div>
                     <div class="homework_box">
@@ -42,16 +48,15 @@
                     </div>
                     <div class="deadline">
                         <label for="截止日期" class="ddl">截止日期</label>
-                        <input type="text" >
+                        <input type="text">
                     </div>
                 </form>
                 <div class="_button">
                     <input class="btn" type="button" value="生成链接">
                 </div>
                 <!-- 弹窗的隐藏盒子 -->
-                <div class="popup_window">
-
-                </div>
+                <div class="popup_window" id="hidden1"></div>
+                <div class="popup_window" id="hidden2"></div>
             </div>
         </div>
         <!-- 右侧的图片 -->
@@ -60,16 +65,39 @@
                 请上传需要提交作业学生名单
             </div>
             <div class="tijiao_button">
-                <input type="button"  class="btn2" value="上传">
-                <input type="file" name="" class="file_up" id="fileup">
+                <label for="fileup">
+                    <div class="btn2">上传</div>
+                </label>
+                <input type="file" name="ExcelFile" class="file_up" id="fileup" onchange="upload()">
             </div>
 
         </div>
         <div class="tip2">
             <div>
-            有学生不在表单内--<span class="add">添加学生信息</span>
+                有学生不在表单内--<span class="add" onclick="popBoxer()">添加学生信息</span>
             </div>
+
         </div>
     </div>
+    <div id="popLayer"></div>
+    <div class="close_btn" id="close"><strong>X</strong></div>
+    <div id="popBoxer">
+        <form action="" method="post">
+            <div>
+                <input type="text" id="student_name" name="name" placeholder="姓名">
+            </div>
+            <div>
+                <input type="text" id="student_id" name="id" placeholder="学号">
+            </div>
+            <div>
+                <input type="text" id="student_email" name="email" placeholder="邮箱">
+            </div>
+        </form>
+        <div class="submit_button">
+            <input class="btn3" type="submit" value="提交">
+        </div>
+    </div>
+    <script src="collect.js"></script>
 </body>
+
 </html>
