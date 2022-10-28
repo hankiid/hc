@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -7,12 +7,13 @@
 body {
     width: 1420px;
     height: 800px;
-    background:#eafcfe url() no-repeat top center;
+    background: #eafcfe url() no-repeat top center;
 }
 
 div {
     overflow: hidden;
 }
+
 a {
     text-decoration: none;
 }
@@ -26,8 +27,9 @@ a {
     font-weight: 700;
     line-height: 100px;
     font-family: "微软雅黑";
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
+
 .zuoye {
     color: #000;
 }
@@ -38,22 +40,23 @@ a {
     height: 700px;
     text-align: center;
 }
+
 /* 作业科目 */
 .subject {
     margin-left: 170px;
     margin-bottom: 10px;
     text-align: left;
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
 
-form > div {
+form>div {
     width: 360px;
     height: 50px;
-    margin:40px 170px ;
+    margin: 25px 170px;
     background-color: #fff;
     border: 0;
-    border-radius: 20px;  
-    box-shadow: 5px 5px 3px 3px rgba(0,0,0,.1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, .1);
 }
 
 select {
@@ -62,15 +65,15 @@ select {
     padding: 0 3px;
     background-color: #fff;
     border: 0;
-    border-radius: 20px;  
+    border-radius: 20px;
     color: rgb(151, 148, 148);
     font-size: 18px;
     font-family: "微软雅黑";
     line-height: 50px;
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
 
-div > label  {
+div>label {
     width: 100px;
     height: 50px;
     background-color: #fff;
@@ -78,8 +81,9 @@ div > label  {
     font-size: 18px;
     font-family: "微软雅黑";
     line-height: 50px;
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
+
 input {
     width: 260px;
     height: 50px;
@@ -88,7 +92,7 @@ input {
     line-height: 50px;
     font-size: 18px;
     font-family: "微软雅黑";
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
 
 .homework_box {
@@ -110,7 +114,7 @@ input {
     float: left;
     width: 254px;
     height: 130px;
-    background-color:#fff;
+    background-color: #fff;
     padding: 10px 3px;
     font-size: 18px;
     text-align: left;
@@ -118,33 +122,35 @@ input {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 .btn {
     width: 160px;
     height: 50px;
     background-color: #475def;
-    color:#fff;
+    color: #fff;
     font-weight: 700;
     font-size: 20px;
     font-family: "微软雅黑";
-    cursor:pointer;
-}
-._button {
-    margin: 60px 270px 0px 270px; 
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.popup_window{
+._button {
+    margin: 60px 270px 0px 270px;
+    cursor: pointer;
+}
+
+.popup_window {
     display: none;
-    width: 200px;
-    height: 120px;
-    margin: 10px 249px;
+    width: 531px;
+    height: 39px;
+    margin: 15px 118px;
     background-color: #fff;
     border: #475def dotted 1px;
     border-radius: 30px;
     font-weight: 700;
     font-size: 20px;
     font-family: "微软雅黑";
-    text-shadow:5px 5px 6px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, .2);
 }
 
 /* 右边的盒子 */
@@ -154,7 +160,7 @@ input {
     width: 620px;
     height: 620px;
     margin-bottom: 0px;
-    border:5px dotted #bbcdfb;
+    border: 5px dotted #bbcdfb;
     border-radius: 20px;
     text-align: center;
 }
@@ -171,10 +177,11 @@ input {
     height: 20px;
 }
 
-.tip2 > div > span {
+.tip2>div>span {
     color: #475def;
     cursor: pointer;
 }
+
 .btn2 {
     width: 160px;
     height: 50px;
@@ -182,13 +189,14 @@ input {
     left: 230px;
     bottom: 80px;
     border: 2px solid #475def;
+    border-radius: 34px;
     background-color: #fff;
     color: #475def;
     font-weight: 700;
     font-size: 20px;
     font-family: "微软雅黑";
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .file_up {
@@ -199,5 +207,78 @@ input {
     left: 230px;
     bottom: 80px;
     /* filter: opacity(0%); */
-    cursor:pointer;
+    cursor: pointer;
+}
+
+#popLayer {
+    display: none;
+    position: absolute;
+    width: 1420px;
+    height: 800px;
+    background-color: #fff;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
+
+#popBoxer {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    z-index: 11;
+    top: 200px;
+    left: 510px;
+    background-color: rgb(255, 253, 249);
+    border: #475def solid 3px;
+    border-radius: 80px;
+}
+
+#popBoxer form>div {
+    width: 360px;
+    height: 50px;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, .1);
+}
+
+#popBoxer form>div input {
+    margin-left: 30px;
+}
+
+.btn3 {
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    left: 120px;
+    bottom: auto;
+    border: 2px solid #475def;
+    background-color: #fff;
+    color: #475def;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-align: center;
+    cursor: pointer;
+}
+
+.close_btn {
+    display: none;
+    position: fixed;
+    top: 190px;
+    right: 420px;
+    width: 40px;
+    height: 40px;
+    background-color: #475def;
+    color: #fff;
+    border-radius: 25px;
+    z-index: 11;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
 }
