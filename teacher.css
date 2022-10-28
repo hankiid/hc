@@ -1,103 +1,120 @@
-.select{
+.select {
     text-align: center;
     margin-top: 50px;
     font-size: large;
 }
+
 /* 提交评分按钮 */
-.submit{
+.submit {
     position: relative;
-    left:47%;
-    top:20px;
-    border-radius:20px;
-    color:white;
+    left: 47%;
+    top: 20px;
+    border-radius: 20px;
+    color: white;
     background-color: blue;
-    border:1px;
+    border: 1px;
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: large;
-    }
-    /* 学生信息框 */
-    .submit2{
-        position: relative;
-        left:45%;
-        top:20px;
-        border-radius:20px;
-        color:blue;
-        background-color: white;
-        border:1.5px solid blue;
-        padding: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: large;
-        margin-bottom: 20px;
-        }
-        input[type=text]{
-            width:70px;
-            border-radius: 10px;border: 1px solid rgb(209,209,209);
-            text-align: center;
-        }
-        input[type=text]:focus{
-            outline: none;
-        }
-ul
-{list-style: none;
+}
+
+/* 学生信息框 */
+.submit2 {
+    position: relative;
+    left: 45%;
+    top: 20px;
+    border-radius: 20px;
+    color: blue;
+    background-color: white;
+    border: 1.5px solid blue;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    width: 70px;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    text-align: center;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
 
 }
-.title{
+
+.title {
     margin-left: 10%;
 }
-.titlepart{
-    color:blue;
+
+.titlepart {
+    color: blue;
 }
-.subject{
-    border-radius:20px;
+
+.subject {
+    border-radius: 20px;
     text-align: center;
     width: 300px;
     height: 30px;
-    background-color:white;
+    background-color: white;
     outline: none;
 
 }
-table
-{ 
-    width:700px;
-   border-collapse:separate;
-   /* padding-bottom: 10px; */
-   margin: 0 auto;
 
-}
-.border_{
+table {
+    width: 700px;
+    border-collapse: separate;
+    /* padding-bottom: 10px; */
     margin: 0 auto;
-    width:700px;
+
+}
+
+.border_ {
+    margin: 0 auto;
+    width: 700px;
     margin-top: 50px;
-   border:3px dashed darkturquoise;
-   border-radius: 20px;
-   padding:20px;
+    border: 3px dashed darkturquoise;
+    border-radius: 20px;
+    padding: 20px;
 }
-tr{text-align: center;
+
+tr {
+    text-align: center;
     height: 40px;
- }
- /* 表格行的下划线 */
- td{
-
-  padding: 0;
- }
-th{
-
-  padding: 10px 0;
 }
- /* 删除a标签删除下划线 */
- a{
-  text-decoration:none;
- }
- /* 上传评分按钮 */
 
-.tishi{
-    border:0;
-    color:blue;
+/* 表格行的下划线 */
+td {
+
+    padding: 0;
 }
-.remind{
+
+th {
+
+    padding: 10px 0;
+}
+
+/* 删除a标签删除下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 上传评分按钮 */
+
+.tishi {
+    border: 0;
+    color: blue;
+}
+
+.remind {
     position: relative;
-    left:63%;
+    left: 63%;
 }
