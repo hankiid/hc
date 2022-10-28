@@ -1,35 +1,46 @@
-function changemy()
-{
-    document.querySelector('h3').innerHTML = '马克思主义原理' ;
-    document.getElementById('homework_content').innerHTML = '社会实践ppt的提交,文件命名的格式,页数不少于30页。' ;
+var student_subject = ''
+
+
+/* 提交学生信息和学生作业 */
+var btn = document.querySelector('.btn')
+btn.onclick = function () {
+
+    var popBoxer = document.getElementById("popBoxer");
+    var popLayer = document.getElementById("popLayer");
+    popBoxer.style.display = "block";
+    popLayer.style.display = "block";
+
+    var student_name = document.getElementById('student_name').value
+    var student_id = document.getElementById('student_id').value
+    let file = $('#fileup')[0].files[0]//获取文件
+    let form = new FormData()
+    form.append('name', student_name)
+    form.append('id', student_id)
+    form.append('subject', student_subject)
+    form.append('file', file)
+    axios({
+        method: 'POST',
+        url: 'http://127.0.0.1/post/student/uploadhomework',
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        },
+        data: form
+    }).then(value => {
+        console.log('成功')
+        console.log(value)
+        console.log(value.data.share);
+    }, reason => {
+        console.log('失败')
+        console.log(reason.message)
+    })
 }
 
-function changevjf()
-{
-    document.querySelector('h3').innerHTML = '微积分' ;
-    document.getElementById('homework_content').innerHTML = '完成作业习题1 ~ 3。' ;
-}
+// 关闭弹窗
+var btn2 = document.querySelector('.btn4')
+btn2.onclick = function close() {
+    var popBoxer = document.getElementById("popBoxer");
+    var popLayer = document.getElementById("popLayer");
+    popBoxer.style.display = "none";
+    popLayer.style.display = "none";
+};
 
-function changedw()
-{
-    document.querySelector('h3').innerHTML = '大学物理' ;
-    document.getElementById('homework_content').innerHTML = '完成作业习题T21 ~ T23，并完成附加作业。' ;
-}
-
-function changedy()
-{
-    document.querySelector('h3').innerHTML = '大学英语' ;
-    document.getElementById('homework_content').innerHTML = '完成书上练习，精听ted，并准备pre。' ;
-}
-
-function changemg()
-{
-    document.querySelector('h3').innerHTML = '毛概' ;
-    document.getElementById('homework_content').innerHTML = '简单介绍本课程给你带来的启发与思考，不少于两千字，并以小组为单位制作PPT上台展示。' ;
-}
-
-$(document).ready(function(){
-    $(".btn2").click(function(){
-        $(".file_up").click();
-    });
-});
